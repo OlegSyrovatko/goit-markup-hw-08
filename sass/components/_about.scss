@@ -1,0 +1,20 @@
+.about{
+    background-color: #fff;
+    padding-top: 0px;
+  }
+  .about__head{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+  }
+  .about__ul{
+    display: flex;
+    margin-top: 50px;
+  }
+  .about__list:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  

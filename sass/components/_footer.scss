@@ -1,0 +1,124 @@
+.footer{
+    max-width: 1600px;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+  .footer__address-link{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  .footer__address-link:hover,
+  .footer__address-link:focus
+  {
+      color: var(--color-sense);
+  }
+  .footer__block{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .footer__mediabottom{
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
+  .footer__address{
+    margin-top: 20px;
+  }
+  .footer__address li  {
+    display: block;
+    font-style: normal;
+  }
+  .footer__address a  {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  }
+  .footer__footer__address-li,
+  .footer__footer__address-li{
+    margin-top: 8px;
+  }
+  .footer__address-map{
+    color: #FFFFFF;
+  } 
+  
+  .footer__come-in{
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .footer__social{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .footer__social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+  }
+  .footer__social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  .footer__social-link:hover,
+  .footer__social-link:focus{
+    color: #FFFFFF;
+    background-color: #188CE8;
+  }
+  .footer__social-icon{
+    fill: currentColor;
+  }
+  
+  .footer__subscribe-title{
+    margin-bottom: 20px;
+  }
+  .footer__subscribe-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .footer__subscribe-input{
+  
+    padding: 16px 15px;
+    width: 358px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }

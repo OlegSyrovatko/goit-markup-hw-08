@@ -1,0 +1,25 @@
+  .client__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+  
+    color: #AFB1B8;
+  
+    transition-property: border, color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  .client__link:hover,
+  .client__link:focus{
+    color: #188CE8;
+    border: 1px solid #188CE8;
+  }
+  .client__icon{
+    fill: currentColor;
+  }
+  
