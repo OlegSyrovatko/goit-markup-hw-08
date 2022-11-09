@@ -1,15 +1,25 @@
 .advantages{
     background-color: #fff;
+
+    &__head{
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.36;
+      letter-spacing: 0.03em;
+    }
+    &__list{
+
+      @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      }
+
+      @media screen and (min-width: 1140px){
+        margin: -15px;
+      }
+    }
+
   }
-  .advantages__head{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.36;
-    letter-spacing: 0.03em;
-  }
-  .advantages__list{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+
   

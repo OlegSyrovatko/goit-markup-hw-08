@@ -1,20 +1,27 @@
 .about{
-    background-color: #fff;
-    padding-top: 0px;
+  @media (max-width: 1139px){
+    display: none;
   }
-  .about__head{
+
+  background-color: #fff;
+  padding-top: 0px;
+
+  &__head{
     text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.36;
     letter-spacing: 0.03em;
   }
-  .about__ul{
+  &__ul{
     display: flex;
     margin-top: 50px;
   }
-  .about__list:not(:last-child){
+  &__list:not(:last-child){
     margin-right: 30px;
   }
+
+}
+
   
   
