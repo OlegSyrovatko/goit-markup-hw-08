@@ -1,16 +1,22 @@
 .clients{
     background-color: #fff;
+
+    &__head{
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+      @media screen and (min-width: 1140px){
+        margin-bottom: 50px;
+      }
+    }
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
-  .clients__head{
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-  .clients__ul{
-    display: flex;
-    margin-top: 50px;
-    gap: 30px;
-  }
+
   

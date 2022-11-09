@@ -5,9 +5,23 @@
     font-size: 36px;
     line-height: 1.36;
     letter-spacing: 0.03em; 
+
+      margin-bottom: 30px;
+    @media screen and (min-width: 1140px){
+      margin-bottom: 50px;
+    }
   }
-  &__ul{
-    display: flex;
-    margin-top: 50px;
+  &__list{
+
+    @media screen and (min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: 1140px){
+      margin: -15px;
+    }
+
   }
 }
