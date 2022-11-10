@@ -1,25 +1,25 @@
-.work a {
+.work{
+  a {
     text-decoration: none;
   }
-  .work__link{
+  &__link{
     display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--timing-function);
   }
-  .work__link:hover .work__overflow,
-  .work__link:focus .work__overflow {
+  &__link:hover &__overflow,
+  &__link:focus &__overflow {
     transform: translateY(0);
   }
-  .work__link:hover, .work__link:focus{
+  &__link:hover, &__link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  .work__img{
+  &__img{
     position: relative;
     overflow: hidden;
   }
-  .work__overflow{
-  
+  &__overflow{
     position: absolute;
     padding: 63px 24px;
     bottom: 0; 
@@ -34,7 +34,9 @@
   
     color: #fff;
     background-color: rgba(33, 150, 243, 0.9);
-  
   }
+}
+
+
   
   
