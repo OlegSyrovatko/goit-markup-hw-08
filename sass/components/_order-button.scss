@@ -31,6 +31,9 @@
   }
 
   .order-button--footer{
+    @media screen and (max-width: 1139px){
+      margin-top: 20px;
+    } 
     display: flex;
     align-items: center;
     justify-content: center;

@@ -9,84 +9,92 @@
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
-}
-.header a {
+
+  & a {
     text-decoration: none;
-}
-.header__menu-container{
-  display: flex;
-  align-items: center;
-}
-.header__menu-nav a {
-  color: var(--color-primary);
-}
-.header__menu-nav {
-  display: flex;
-  align-items: center;
-  color: var(--color-primary);
-}
-.header__site-nav {
-  display: flex;
-  margin-left: 93px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-.header__site-nav a:hover,
-.header__site-nav a:focus, 
-.header__telmail-item:hover,
-.header__telmail-item:focus
-{
+  }
+  &__menu-container{
+    display: flex;
+    align-items: center;
+  }
+  &__menu-nav a {
+    color: var(--color-primary);
+  }
+  &__menu-nav {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+  }
+  &__site-nav {
+    display: flex;
+    margin-left: 93px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+  &__site-nav a:hover,
+  &__site-nav a:focus, 
+  &__telmail-item:hover,
+  &__telmail-item:focus
+  {
     color: var(--color-sense);
-}
-.header__nav-li:not(:last-child){
-  margin-right: 50px;
-}
-.header__nav-link{
-  display: block;
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  }
+  &__nav-li:not(:last-child){
+    margin-right: 50px;
+  }
+  &__nav-link{
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-.header__tel-mail{
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-.header__telmail-li:last-child{
-  margin-left: 50px;
-}
-.header__telmail-item{
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  &__telmail-li:last-child{
+    margin-left: 50px;
+  }
+  &__tel-mail{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @media screen and (max-width: 1139px){
+      flex-direction: column;
+      margin-left: 0px;
+    }
+  }
 
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #757575;
-  letter-spacing: 0.02em;
+  &__telmail-item{
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-.header__smartphone,
-.header__envelope {
-  fill:currentColor;
-  margin-right: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #757575;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+  &__smartphone,
+  &__envelope {
+    fill:currentColor;
+    margin-right: 10px;
+  }
+
 }
 
-.link.header__nav-link--current{
+
+.link&__nav-link--current{
   color: var(--color-sense);
 }
-.link.header__nav-link--current::after{
+.link&__nav-link--current::after{
   content: "";
   position: absolute;
   left: 0;
