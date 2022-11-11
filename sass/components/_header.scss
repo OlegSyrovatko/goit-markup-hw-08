@@ -27,7 +27,9 @@
   }
   &__site-nav {
     display: flex;
-    margin-left: 93px;
+    @media screen and (max-width: 1199px){
+      margin-left: 88px;
+    }
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -55,6 +57,9 @@
   }
   &__telmail-li:last-child{
     margin-left: 50px;
+    @media screen and (max-width: 1199px){
+      margin-left: 0px;
+    }
   }
   &__tel-mail{
     display: flex;
@@ -62,7 +67,7 @@
     margin-left: auto;
     @media screen and (max-width: 1199px){
       flex-direction: column;
-      margin-left: 0px;
+      right: 0px;
     }
   }
 

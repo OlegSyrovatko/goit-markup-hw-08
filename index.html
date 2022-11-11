@@ -16,40 +16,22 @@
   <body>
 
     <header class="header">
-      <div class="container header__menu-container">
-        
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+      <button type="button" class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="24" height="16" class="close-button__image">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg> 
+      </button>
 
-        <ul class="menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
-        </ul>
+      <div class="container header__menu-container">
         
         <nav class="header__menu-nav">
           <a class="logo" href="./index.html">
             <span class="logo__link">Web</span>Studio
           </a>
-          <ul class="header__site-nav list">
+          <ul class="header__site-nav list menu">
             <li class="header__nav-li">
               <a class="header__nav-link link header__nav-link--current" href="./index.html">Студія</a>
             </li>
@@ -61,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list header__tel-mail">
+        <ul class="list header__tel-mail menu">
           <li class="header__telmail-li">
             <a class="header__telmail-item" href="mailto:info@devstudio.com">
               <svg class="header__envelope" width="14" height="14">
@@ -83,12 +65,12 @@
     </header>
 
     <main>
-      <section class="section hero">
+      <!-- <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="order-button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>
+      </section> -->
       <section class="section advantages">
         <div class="container">
           <h2 class="visually-hidden advantages__head">Наші переваги</h2>
@@ -531,6 +513,21 @@
         </div>
       </div>
     </div>    
+    
+    <div class="menu-container js-menu-container js-close-menu">
+      <button type="button" class="close-button" data-modal-close>
+        <svg width="11" height="11" class="close-button__image">
+          <use href="./images/icons.svg#close-blank"></use>
+        </svg> 
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
