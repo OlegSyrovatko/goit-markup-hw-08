@@ -27,9 +27,8 @@
   }
   &__site-nav {
     display: flex;
-    @media screen and (max-width: 1199px){
-      margin-left: 88px;
-    }
+    margin-left: 88px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -68,6 +67,10 @@
     @media screen and (max-width: 1199px){
       flex-direction: column;
       right: 0px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      gap: 6px;
+      align-items: flex-start;
     }
   }
 
@@ -76,6 +79,10 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    @media screen and (max-width: 1199px){
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
 
     font-weight: 500;
     font-size: 14px;
@@ -91,7 +98,11 @@
   &__envelope {
     fill:currentColor;
     margin-right: 10px;
+    @media screen and (max-width: 1199px){
+      margin-right: 8px;
+    }
   }
+
 
 }
 

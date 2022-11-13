@@ -38,11 +38,12 @@
   
   .menu-container {
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
+    padding: 48px 40px;
     background-color: #FFFFFF;
     z-index: 999;
   
@@ -59,5 +60,23 @@
     top: 16px;
     left: 16px;
     color: #fff;
+  }
+  
+  .close-button-menu{
+    position: absolute;
+    top: 8px;
+    left: auto;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;;
+    
+
+  }
+
+  .close-button-menu:hover .close-button-menu__image{
+    fill:var(--color-sense);
   }
   
