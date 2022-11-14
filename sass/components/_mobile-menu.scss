@@ -1,10 +1,8 @@
-   @media (max-width: 767px) {
-    .menu {
+.menu {
+  @media (max-width: 767px) {
       display: none;
-    }
   }
-
-  .menu-toggle {
+  &__toggle {
 
     position: absolute;
     display: flex;
@@ -23,20 +21,18 @@
     cursor: pointer;
     border: none;
     outline: none;
-  }
-  
-  @media (min-width: 768px) {
-    .menu-toggle {
+
+    @media (min-width: 768px) {
       display: none;
     }
   }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
+
+  &__toggle:hover,
+  &__toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
-  .menu-container {
+
+  &__container {
     position: fixed;
     overflow-y: scroll;
     top: 0;
@@ -51,32 +47,100 @@
     transition: transform 250ms ease-in-out;
   }
   
-  .menu-container.is-open {
+  
+  &__container.is-open {
     transform: translateX(0);
   }
   
-  .menu-container .menu-toggle {
+  &__container &__toggle {
     position: absolute;
     top: 16px;
     left: 16px;
     color: #fff;
   }
   
-  .close-button-menu{
+  &__close-button{
     position: absolute;
-    top: 8px;
+    top: 21px;
     left: auto;
-    right: 8px;
+    right: 25px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #fff;
-    border: 1px solid #fff;;
-    
-
+    border: 1px solid #fff;
   }
 
-  .close-button-menu:hover .close-button-menu__image{
+  &__close-button:hover &__close-button-image{
     fill:var(--color-sense);
   }
-  
+
+
+  &__nav-li:not(:last-child){
+    margin-bottom: 35px;
+  }
+
+  &__nav-link{
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    color: #212121;
+    letter-spacing: 0.02em;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+  }
+
+  &__nav-link:hover,
+  &__nav-link:focus 
+  {
+    color: var(--color-sense);
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+
+  &__tel{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--color-sense);
+  }
+  &__eml{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+
+  &__social{
+    display: flex;
+    gap: 20px;
+
+  }
+  &__social-li{
+
+    text-decoration: none;
+    color: var(--color-sense);
+  }
+}
+
+.link.menu__nav-link--current{
+  color: var(--color-sense);
+}

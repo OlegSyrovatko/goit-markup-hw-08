@@ -16,11 +16,11 @@
   <body>
 
     <header class="header">
-      <button type="button" class="menu-toggle js-open-menu"
+      <button type="button" class="menu__toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg width="24" height="16" class="close-button__image">
+        <svg width="24" height="16">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg> 
       </button>
@@ -514,25 +514,39 @@
       </div>
     </div>    
     
-    <div class="menu-container js-menu-container js-close-menu">
-      <button type="button" class="close-button-menu" data-modal-close>
-        <svg width="11" height="11" class="close-button-menu__image">
+    <div class="menu__container js-menu-container js-close-menu">
+      <button type="button" class="menu__close-button" data-modal-close>
+        <svg width="19" height="19" class="menu__close-button-image">
           <use href="./images/icons.svg#close-blank"></use>
         </svg> 
       </button>
-
-      <ul class="header__site-nav list">
-        <li class="header__nav-li">
-          <a class="header__nav-link link header__nav-link--current" href="./index.html">Студія</a>
-        </li>
-        <li class="header__nav-li">
-          <a class="header__nav-link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="header__nav-li">
-          <a class="header__nav-link" href="#">Контакти</a>
-        </li>
-      </ul>
-      
+      <div class="menu__content">
+        <ul class="list">
+          <li class="menu__nav-li">
+            <a class="menu__nav-link link menu__nav-link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="menu__nav-li">
+            <a class="menu__nav-link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu__nav-li">
+            <a class="menu__nav-link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <div>
+          <a class="menu__tel" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+          <a class="menu__eml" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <ul class="menu__social">
+            <li class="menu__social-li"><a href="#">Instagram</a></li>
+            <li class="menu__social-li"><a href="#">Twitter</a></li>
+            <li class="menu__social-li"><a href="#">Facebook</a></li>
+            <li class="menu__social-li"><a href="#">LinkedIn</a></li>            
+          </ul> 
+        </div>
+      </div>
     </div>
 
     <script
