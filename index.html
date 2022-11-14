@@ -31,7 +31,7 @@
           <a class="logo" href="./index.html">
             <span class="logo__link">Web</span>Studio
           </a>
-          <ul class="header__site-nav list menu">
+          <ul class="header__site-nav menu">
             <li class="header__nav-li">
               <a class="header__nav-link link header__nav-link--current" href="./index.html">Студія</a>
             </li>
@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list header__tel-mail menu">
+        <ul class="header__tel-mail menu">
           <li class="header__telmail-li">
             <a class="header__telmail-item" href="mailto:info@devstudio.com">
               <svg class="header__envelope" width="14" height="14">
@@ -65,16 +65,16 @@
     </header>
 
     <main>
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="order-button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <section class="section advantages">
         <div class="container">
           <h2 class="visually-hidden advantages__head">Наші переваги</h2>
-          <ul class="list advantages__list">
+          <ul class="advantages__list">
           <li class="advantages-item">
             <div class="advantages-item__icon">
               <svg width="65" height="70">
@@ -128,7 +128,7 @@
       <section class="section about">
         <div class="container">
           <h2 class="about__head">Чим ми займаємось</h2>
-          <ul class="list about__ul">
+          <ul class="about__ul">
             <li class="about__list">
               <div class="about-block">
                 <img
@@ -171,7 +171,7 @@
       <section class="section ourteam">
         <div class="container">
           <h2 class="ourteam__head">Наша команда</h2>
-          <ul class = "list ourteam__list">
+          <ul class = "ourteam__list">
             <li class="ourteam-block">
               <img
                 src="./images/teamcard1.jpg"
@@ -342,7 +342,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="clients__head">Постійні клієнти</h2>
-          <ul class="list clients__list">
+          <ul class="clients__list">
             <li class="client"> 
               <a href="#" class="client__link">
                 <svg class="client__icon" width="106" height="60">
@@ -399,7 +399,7 @@
                 <span class="logo__link">Web</span>Studio
               </a>
               <address class="footer__address">
-                <ul class="list footer__mob-center">
+                <ul class="footer__mob-center">
                   <li><a class="footer__address-map" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Украінки, 26</a> </li>
                   <li class="footer__address-li"><a class="footer__address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                   <li class="footer__address-li"><a class="footer__address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -521,11 +521,11 @@
         </svg> 
       </button>
       <div class="menu__content">
-        <ul class="list">
+        <ul>
           <li class="menu__nav-li">
             <a class="menu__nav-link link menu__nav-link--current" href="./index.html">Студія</a>
           </li>
-          <li class="menu__nav-li">
+          <li class="menu__nav-li">ul
             <a class="menu__nav-link" href="./portfolio.html">Портфоліо</a>
           </li>
           <li class="menu__nav-li">
@@ -540,10 +540,16 @@
             info@devstudio.com
           </a>
           <ul class="menu__social">
-            <li class="menu__social-li"><a href="#">Instagram</a></li>
-            <li class="menu__social-li"><a href="#">Twitter</a></li>
-            <li class="menu__social-li"><a href="#">Facebook</a></li>
-            <li class="menu__social-li"><a href="#">LinkedIn</a></li>            
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Facebook</a>
+            </li>
+            <li><a class="menu__social-item" href="#">LinkedIn</a></li>            
           </ul> 
         </div>
       </div>

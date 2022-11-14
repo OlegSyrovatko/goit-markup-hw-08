@@ -16,12 +16,22 @@
   <body>
 
     <header class="header">
+      <button type="button" class="menu__toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="24" height="16">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg> 
+      </button>
+
       <div class="container header__menu-container">
+        
         <nav class="header__menu-nav">
           <a class="logo" href="./index.html">
             <span class="logo__link">Web</span>Studio
           </a>
-          <ul class="header__site-nav list">
+          <ul class="header__site-nav menu">
             <li class="header__nav-li">
               <a class="header__nav-link" href="./index.html">Студія</a>
             </li>
@@ -33,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list header__tel-mail">
+        <ul class="header__tel-mail menu">
           <li class="header__telmail-li">
             <a class="header__telmail-item" href="mailto:info@devstudio.com">
               <svg class="header__envelope" width="14" height="14">
@@ -54,12 +64,11 @@
       </div>
     </header>
 
-
     <main>
         <section class="portfolio section">
           <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
-            <ul class="list portfolio__list">
+            <ul class="portfolio__list">
                 <li><button type="button" class="portfolio__button portfolio__button--default">Усі</button></li>
                 <li class="portfolio__item"><button type="button" class="portfolio__button">Веб-сайти</button></li>
                 <li class="portfolio__item"><button type="button" class="portfolio__button">Додатки</button></li>
@@ -68,7 +77,7 @@
             </ul>
 
             <h2 class="visually-hidden portfolio__title">Наші роботи</h2>
-            <ul class="portfolio__works list">
+            <ul class="portfolio__works">
               <li class="work">
                   <a href="#" class="work__link">
                     <div class="work__img">
@@ -208,7 +217,7 @@
                 <span class="logo__link">Web</span>Studio
               </a>
               <address class="footer__address">
-                <ul class="list footer__mob-center">
+                <ul class="footer__mob-center">
                   <li><a class="footer__address-map" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">м. Київ, пр-т Лесі Украінки, 26</a> </li>
                   <li class="footer__address-li"><a class="footer__address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                   <li class="footer__address-li"><a class="footer__address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -266,5 +275,48 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu__container js-menu-container js-close-menu">
+      <button type="button" class="menu__close-button" data-modal-close>
+        <svg width="19" height="19" class="menu__close-button-image">
+          <use href="./images/icons.svg#close-blank"></use>
+        </svg> 
+      </button>
+      <div class="menu__content">
+        <ul>
+          <li class="menu__nav-li">
+            <a class="menu__nav-link" href="./index.html">Студія</a>
+          </li>
+          <li class="menu__nav-li">
+            <a class="menu__nav-link link menu__nav-link--current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="menu__nav-li">
+            <a class="menu__nav-link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <div>
+          <a class="menu__tel" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+          <a class="menu__eml" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <ul class="menu__social">
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Instagram</a>
+            </li>
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Twitter</a>
+            </li>
+            <li>
+              <a class="menu__social-item menu__social-item-bordered" href="#">Facebook</a>
+            </li>
+            <li><a class="menu__social-item" href="#">LinkedIn</a></li>            
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
