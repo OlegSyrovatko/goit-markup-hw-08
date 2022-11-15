@@ -131,11 +131,13 @@
           <ul class="about__ul">
             <li class="about__list">
               <div class="about-block">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Верстка сайту"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box1-370.jpg 1x, ./images/box1-370@2x.jpg 2x"
+                    src="./images/box1-370.jpg"
+                  />
+                  <img src="./images/box1-370.jpg" alt="Верстка сайту">
+                </picture>
                 <div class="about-block__description">
                   <p class="about-block__text">Десктопні додатки</p>
                 </div>
@@ -143,11 +145,13 @@
             </li>
             <li class="about__list">
               <div class="about-block">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Адаптивна верстка"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box2-370.jpg 1x, ./images/box2-370@2x.jpg 2x"
+                    src="./images/box2-370.jpg"
+                  />
+                  <img src="./images/box2-370.jpg" alt="Адаптивна верстка">
+                </picture>
                 <div class="about-block__description">
                   <p class="about-block__text">Мобільні додатки</p>
                 </div>
@@ -155,11 +159,14 @@
             </li>
             <li class="about__list">
               <div class="about-block">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Оригінальний дизайн"
-                  width="370"
-                />
+
+                <picture>
+                  <source
+                    srcset="./images/box3-370.jpg 1x, ./images/box3-370@2x.jpg 2x"
+                    src="./images/box3-370.jpg"
+                  />
+                  <img src="./images/box3-370.jpg" alt="Оригінальний дизайн">
+                </picture>
                 <div class="about-block__description">
                   <p class="about-block__text">Дизайнерські рішення</p>
                 </div>
@@ -173,11 +180,24 @@
           <h2 class="ourteam__head">Наша команда</h2>
           <ul class = "ourteam__list">
             <li class="ourteam-block">
-              <img
-                src="./images/teamcard1.jpg"
-                alt="Хлопець в окулярах з посмішкою"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard1-450.jpg 1x, ./images/teamcard1-450@2x.jpg 2x"
+                  src="./images/teamcard1-450.jpg"
+                />
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/teamcard1-270.jpg 1x, ./images/teamcard1-270@2x.jpg 2x"
+                  src="./images/teamcard1-270.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/teamcard1-354.jpg 1x, ./images/teamcard1-354@2x.jpg 2x"
+                  src="./images/teamcard1-354.jpg"
+                />
+                <img src="./images/teamcard1-270.jpg" alt="Хлопець в окулярах з посмішкою">
+              </picture>
               <div class="ourteam-block__item">
                 <h3 class="ourteam-block__title">Ігор Дем'яненко</h3>
                 <p class="ourteam-block__description" lang="en">Product Designer</p>
@@ -214,11 +234,24 @@
               </div>
             </li>
             <li class="ourteam-block">
-              <img
-                src="./images/teamcard2.jpg"
-                alt="Симпатична блондинка в окулярах"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard2-450.jpg 1x, ./images/teamcard2-450@2x.jpg 2x"
+                  src="./images/teamcard2-450.jpg"
+                />
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/teamcard2-270.jpg 1x, ./images/teamcard2-270@2x.jpg 2x"
+                  src="./images/teamcard2-270.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/teamcard2-354.jpg 1x, ./images/teamcard2-354@2x.jpg 2x"
+                  src="./images/teamcard2-354.jpg"
+                />
+                <img src="./images/teamcard2-270.jpg" alt="Симпатична блондинка в окулярах">
+              </picture>
               <div class="ourteam-block__item">
                 <h3 class="ourteam-block__title">Ольга Рєпіна</h3>
                 <p class="ourteam-block__description" lang="en">Frontend Developer</p>
@@ -255,11 +288,24 @@
               </div>
             </li>
             <li class="ourteam-block">
-              <img
-                src="./images/teamcard3.jpg"
-                alt="Шатен з посмішкою в рубашці"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard3-450.jpg 1x, ./images/teamcard3-450@2x.jpg 2x"
+                  src="./images/teamcard3-450.jpg"
+                />
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/teamcard3-270.jpg 1x, ./images/teamcard3-270@2x.jpg 2x"
+                  src="./images/teamcard3-270.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/teamcard3-354.jpg 1x, ./images/teamcard3-354@2x.jpg 2x"
+                  src="./images/teamcard3-354.jpg"
+                />
+                <img src="./images/teamcard3-270.jpg" alt="Шатен з посмішкою в рубашці">
+              </picture>
               <div class="ourteam-block__item">
                 <h3 class="ourteam-block__title">Микола Тарасов</h3>
                 <p class="ourteam-block__description" lang="en">Marketing</p>
@@ -296,11 +342,24 @@
               </div>
             </li>
             <li class="ourteam-block">
-              <img
-                src="./images/teamcard4.jpg"
-                alt="Брюнет в окулярах з бородою"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/teamcard4-450.jpg 1x, ./images/teamcard4-450@2x.jpg 2x"
+                  src="./images/teamcard4-450.jpg"
+                />
+                <source 
+                  media="(min-width: 1200px)"
+                  srcset="./images/teamcard4-270.jpg 1x, ./images/teamcard4-270@2x.jpg 2x"
+                  src="./images/teamcard4-270.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/teamcard4-354.jpg 1x, ./images/teamcard4-354@2x.jpg 2x"
+                  src="./images/teamcard4-354.jpg"
+                />
+                <img src="./images/teamcard4-270.jpg" alt="Брюнет в окулярах з бородою">
+              </picture>
               <div class="ourteam-block__item">
                 <h3 class="ourteam-block__title">Михайло Єрмаков</h3>
                 <p class="ourteam-block__description" lang="en">UI Designer</p>
