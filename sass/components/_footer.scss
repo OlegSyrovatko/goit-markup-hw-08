@@ -81,6 +81,11 @@
     text-transform: uppercase;
     color: #fff;
   }
+  &__come-in-tablet{
+    @media screen and (max-width: 1199px) and (min-width: 768px){
+      margin-top: -60px;
+    } 
+  }
   &__social{
     display: flex;
     margin-top: 20px;
