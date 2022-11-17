@@ -6,20 +6,24 @@
     @media screen and (min-width: 768px){
       justify-content:center;
     }
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px){
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px){
+      margin-bottom: 50px;
+    }
   }
   &__item{
-    margin-left: 8px;
+    margin-right: 8px;
     margin-bottom: 15px;
     @media screen and (min-width: 768px){
       margin-top: 0px;
     }
   }
 
-  &__item:nth-child(4){
-      @media screen and (max-width: 767px){
-        margin-left: 0px;
-    }
-  }
+
+
 
   &__button {
     display: inline-block;
@@ -64,16 +68,11 @@
     letter-spacing: 0.03em;
   }
   &__works{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25px;
+    margin: -15px;
     @media screen and (min-width: 768px){
-      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
     }
-    @media screen and (min-width: 1200px){
-      margin-top: 50px;
-    }
-    gap: 30px;
   }
 }
  
