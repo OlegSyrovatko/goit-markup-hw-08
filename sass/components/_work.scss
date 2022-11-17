@@ -18,7 +18,8 @@
     text-decoration: none;
   }
   &__link{
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     
     transition-property: box-shadow;
