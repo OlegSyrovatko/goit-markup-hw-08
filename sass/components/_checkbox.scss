@@ -4,10 +4,12 @@
   align-items: center;
   margin-bottom: 30px;
 
+
   &__text{
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    
     @media screen and (min-width: 1200px){
       font-size: 14px;
       line-height: 1.7;
@@ -31,7 +33,7 @@
     overflow: hidden;
   }
   &__icon{
-    width: 16px;
+    min-width: 16px;
     height: 15px;
 
     @media screen and (min-width: 1200px){

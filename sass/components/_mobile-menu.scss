@@ -2,8 +2,14 @@
   @media (max-width: 767px) {
       display: none;
   }
-  &__toggle {
 
+  &__icon:hover,
+  &__icon:focus
+  {
+    fill: var(--color-sense);
+  }
+
+  &__toggle {
     position: absolute;
     display: flex;
     align-items: center;

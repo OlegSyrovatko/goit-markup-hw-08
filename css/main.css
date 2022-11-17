@@ -530,6 +530,7 @@ ul {
   top: 0;
   left: 0;
   z-index: 1;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms, visibility 250ms;
   transition: opacity 250ms, visibility 250ms;
@@ -576,7 +577,7 @@ ul {
   overflow: hidden;
 }
 .checkbox__icon {
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   background-image: url("../images/checked-default.svg");
   -webkit-transition-property: background-image;
@@ -1266,6 +1267,9 @@ ul {
     display: none;
   }
 }
+.menu__icon:hover, .menu__icon:focus {
+  fill: var(--color-sense);
+}
 .menu__toggle {
   position: absolute;
   display: -webkit-box;
@@ -1421,10 +1425,10 @@ ul {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translatex(-50%) scale(1);
+          transform: translatex(-50%) scale(1);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
@@ -1709,6 +1713,7 @@ ul {
 }
 .work__link {
   display: block;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
